@@ -6,6 +6,5 @@ public static void main(String[] args) {
     System.out.println("Hello World,I'am FAY");
     System.out.println(" System");
     System.out.println(" RMUTSV");
-
 }//main
 }//class
