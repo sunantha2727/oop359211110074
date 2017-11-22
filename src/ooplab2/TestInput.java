@@ -27,7 +27,7 @@ public class TestInput {
         System.out.println("You came from"+address);
         System.out.print("What is your weight?: ");
         double weight = scanner.nextDouble();
-        System.out.println("Your weight : "+weight);
+        System.out.println("Your weight  : "+weight);
 
 
 
