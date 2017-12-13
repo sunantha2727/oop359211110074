@@ -2,7 +2,7 @@ package ooplab4;
 
 import java.util.Scanner;
 
-public class TestWhileLoop {
+public class TestWhileLoop1 {
     public static void main(String[] args) {
         //Whle
         //int n = 1;
