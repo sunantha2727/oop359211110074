@@ -26,7 +26,7 @@ public class CalGrade {
             System.out.println("Your grade is B");
         else
             System.out.println("Your grade is A");
-        break;
+
 
     }//main
 }// calss
