@@ -1,17 +1,17 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Random;
 import java.util.Scanner;
 
-public class sortingArray {
-    private static final int MAX = 10;
+public class Test {
+    private static final int MAX = 20;
     private static int number[] = new int[MAX];
     public static void main(String[] args) {
         inputData(number,number.length);
 
         showData(number, number.length);
-        findMaxData(number);
-        findMinData(number);
+
         System.out.println("Before sorting: ");
         //ascending order
         sortingDataAscending(number);
@@ -39,24 +39,7 @@ public class sortingArray {
         showData(number,number.length);
     }//sortingData
 
-    private static void findMinData(int[] number) {
-        int min = number[0];
-        for (int i=0;i<number.length;i++){
-            if (min>=number[i])
-                min = number[i];
-        }//for
-        System.out.println("The minimum data: " + min);
-    }//findMinData
 
-    private static void findMaxData(int[] number) {
-        int max = number[0];
-        for (int i=0;i<number.length;i++){
-            if (max<=number[i])
-                max = number[i];
-        }//for
-        System.out.println("The maximum data: " + max);
-
-    }//findMaxData
 
     private static void showData(int[] number, int length) {
         System.out.print("Data in array: ");
@@ -71,8 +54,8 @@ public class sortingArray {
         for(int i=0;i<length;i++){
             System.out.print(number[i]+" ");
         }
-        System.out.println();
 
+        System.out.println();
     }//showData
 
     private static void inputData(int[] number, int length) {
@@ -86,4 +69,5 @@ public class sortingArray {
 
 
     }//inputData
+
 }//class
