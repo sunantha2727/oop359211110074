@@ -10,8 +10,8 @@ package midterm;
                 BufferedReader reader = new BufferedReader(
                              new InputStreamReader(System.in));
                 int age;
-                int check;
-                int a= 1;
+             int check;
+              int a= 1;
                String i;
                do {
                    do {
