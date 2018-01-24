@@ -7,7 +7,7 @@ public class mySuperCar {
 
         SuperCar s3 = new SuperCar();
         s3 = inputData(s3);
-        System.out.println(s3.toString());
+        System.out.println (s3.toString());
     }//main
 
     private static SuperCar inputData(SuperCar s) {
