@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class StudentApp {
     public static void main(String[] args) {
-        //create object as Student
+        //create object as student
         //default constructor
-        student s1 = new student();
+        student s1= new student();
         s1.setId("001");
         s1.setName("Boy Saiyai");
-        s1.setAddress("109 M.2 T.Thungsomg A.Thungsung");
+        s1.setAddress("109 M.2 T.Thamyai A.Thungsong");
         s1.setGender("Male");
 
         System.out.println(s1.getName());
@@ -17,28 +17,29 @@ public class StudentApp {
 
         System.out.println(s1.toString());
 
-        student s2 = new student("002","Girl Saiyai","11/11 T.Tawang A.Miang","Female");
+        student s2 = new student("002","Girl Saiyai","11/11 T.Tawang A.Muang","Female");
         System.out.println(s2.toString());
 
-        s2.setName("Girl Songkla");
+        s2.setName("Girl Shongkla");
         System.out.println(s2.toString());
-        //user assign sata to object
+        //user assign date to object
+
         student s3 = new student();
         s3 = inputData(s3);
         System.out.println(s3.toString());
-    }
+    }//main
 
     private static student inputData(student s) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter a saudent info");
-        System.out.print("Student ID");
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Please enter a student info: ");
+        System.out.print("Student ID: ");
         s.setId(scanner.nextLine());
-        System.out.print("Name : ");
+        System.out.print("Name: ");
         s.setName(scanner.nextLine());
-        System.out.print("Address : ");
+        System.out.print("Address: ");
         s.setAddress(scanner.nextLine());
-        System.out.print("Gender : ");
+        System.out.print("Gender: ");
         s.setGender(scanner.nextLine());
         return s;
-    }//inputData
-}
+    }//inputdata
+}//class
