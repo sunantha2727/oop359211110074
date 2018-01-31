@@ -8,7 +8,7 @@ public class mySuperCar {
         ArrayList<SuperCar> myCarList = new ArrayList<SuperCar>();
         myCarList = inputData(myCarList);
         System.out.println("== Show Super Car Info ==");
-        for (int i=0;i<myCarList.size();i++){
+        for  (int i=0;i<myCarList.size();i++){
             System.out.println(myCarList.get(i).getSuperCarInfo());
         }
     }
