@@ -1,14 +1,12 @@
 package oopleb8;
 
-import java.util.Date;
-
 public class Person {
     private String name;
     private String gander;
-    private Date dateOFBirth;
+    private String dateOFBirth;
     private int age;
 
-    public Person(String name, String gander, Date dateOFBirth, int age) {
+    public Person(String name, String gander, String dateOFBirth, int age) {
         this.name = name;
         this.gander = gander;
         this.dateOFBirth = dateOFBirth;
@@ -44,11 +42,11 @@ public class Person {
         this.gander = gander;
     }
 
-    public Date getDateOFBirth() {
+    public String getDateOFBirth() {
         return dateOFBirth;
     }
 
-    public void setDateOFBirth(Date dateOFBirth) {
+    public void setDateOFBirth(String dateOFBirth) {
         this.dateOFBirth = dateOFBirth;
     }
 

@@ -1,6 +1,5 @@
 package oopleb8;
 
-import java.util.Date;
 //student is sub-class
 //Person is super-class
 //Pweson is super-class
@@ -8,7 +7,7 @@ import java.util.Date;
 public class Student extends Person {
 private String id;
 private String program;
-    public Student(String name, String gander, Date dateOFBirth, int age,String id, String program) {
+    public Student(String name, String gander, String dateOFBirth, int age, String id, String program) {
         super(name, gander, dateOFBirth, age);
         this.id = id;
         this.program = program;
