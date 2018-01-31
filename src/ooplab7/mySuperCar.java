@@ -1,29 +1,31 @@
 package ooplab7;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class mySuperCar {
     public static void main(String[] args) {
-
-        SuperCar s3 = new SuperCar();
-        s3 = inputData(s3);
-        System.out.println (s3.toString());
-    }//main
-
-    private static SuperCar inputData(SuperCar s) {
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Please enter a SuperCar  info: ");
-        System.out.print("car brand : ");
-        s.setBrand(scanner.nextLine());
-        System.out.print("car color: ");
-        s.setColor(scanner.nextLine());
-        System.out.print("car engine size: ");
-        s.setSize(scanner.nextLine());
-        System.out.print("max speed: ");
-        s.setMax(scanner.nextLine());
-        System.out.print("country of origin : ");
-        s.setOrigin(scanner.nextLine());
-        return s;
-    }//inputdata
-}//class
-
+        ArrayList<SuperCar> myCarList = new ArrayList<SuperCar>();
+        myCarList = inputData(myCarList);
+        System.out.println("== Show Super Car Info ==");
+        for (int i=0;i<myCarList.size();i++){
+            System.out.println(myCarList.get(i).getSuperCarInfo());
+        }
+    }
+    private static ArrayList inputData(ArrayList myCarList) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please insert super car info: ");
+        for (int i =0;i<2;i++){
+            System.out.println("Super car: "+(i+1));
+            System.out.print("Brand: ");
+            String b = scanner.nextLine();
+            System.out.print("Color: ");
+            String c = scanner.nextLine();
+            System.out.print("Engine Size: ");
+            String e = scanner.nextLine();
+            SuperCar car  = new SuperCar(b,c,e);
+            myCarList.add(car);
+        }
+        return myCarList;
+    }
+}
