@@ -7,7 +7,7 @@ public class Dog extends Pet {
     }
 
     @Override
-    public void makeNoise() {
+    public void  makeNoise() {
         System.out.println("Box Box !!!");
     }
 }
