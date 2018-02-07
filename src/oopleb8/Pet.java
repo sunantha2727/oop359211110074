@@ -1,6 +1,7 @@
 package oopleb8;
 
 public abstract class Pet {
+    String msg="Hello";
     private String name;
     private int age;
 
