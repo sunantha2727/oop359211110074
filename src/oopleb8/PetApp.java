@@ -13,7 +13,7 @@ public class PetApp {
         Cow cow = new Cow("Namjai",5);
         System.out.println(cow.toString());
         cow.makeNoise();
-        System.out.println(cow.mag);
+       // System.out.println(cow.mag);
     }
 
 }
